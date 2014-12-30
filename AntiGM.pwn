@@ -5,7 +5,7 @@
 const MAX_PLAYERS = 500;
 new ShotsTotal[MAX_PLAYERS], ShotsDoneEffect[MAX_PLAYERS];
 
-public OnPlayerTakeDamage(playerid, issuerid, Float:amount, weaponid) //calling only with no cheats AND
+public OnPlayerTakeDamage(playerid, issuerid, Float:amount, weaponid) //calling only with no cheat
 {
 	if(!IsPlayerPaused(playerid)) ShotsDoneEffect[playerid]++;
 	else { ShotsTotal[playerid] = 0; ShotsDoneEffect[playerid] = 0; }
